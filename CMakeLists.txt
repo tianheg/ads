@@ -8,7 +8,6 @@ project(Algorithm_and_Data_Structure
 # Set compilation standards
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED YES)
-set(CMAKE_MAKE_PROGRAM Ninja)
 
 if(MSVC)
     add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
@@ -18,18 +17,6 @@ endif(MSVC)
 # check for math library
 # addresses a bug when linking on OSX
 find_library(MATH_LIBRARY m)
-
-# Optional flag - can be set by user 
-# Default "ON"
-option(USE_OPENMP "flag to use OpenMP for multithreading" ON)
-if(USE_OPENMP)
-    find_package(OpenMP)
-    if (OpenMP_C_FOUND)
-        message(STATUS "Building with OpenMP Multithreading.")
-    else()
-        message(STATUS "No OpenMP found, no multithreading.")
-    endif()
-endif()
 
 ## Check for some required header files
 include(CheckIncludeFile)
@@ -46,21 +33,6 @@ endif()
 if (NOT HAS_INTTYPES_H)
     message(FATAL_ERROR "Missing required header: 'inttypes.h'")
 endif()
-
-## Add subdirectories containing CMakeLists.txt 
-# to configure and compile files in the respective folders
-add_subdirectory(hash)
-add_subdirectory(misc)
-add_subdirectory(games)
-add_subdirectory(sorting)
-add_subdirectory(geometry)
-add_subdirectory(graphics)
-add_subdirectory(searching)
-add_subdirectory(conversions)
-add_subdirectory(client_server)
-add_subdirectory(project_euler)
-add_subdirectory(machine_learning)
-add_subdirectory(numerical_methods)
 
 ## Configure Doxygen documentation system
 cmake_policy(SET CMP0054 NEW)
