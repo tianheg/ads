@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          submodules: true
+          submodules: false
       - name: Install requirements
         run: |
           brew install graphviz ninja doxygen
