@@ -19,7 +19,7 @@ jobs:
           mkdir build && cd build && cmake ..
       - name: Doxygen
         run: |
-          doxygen ./Doxyfile.doc
+          doxygen ./Doxyfile
       - name: gh-pages
         uses: actions/checkout@master
         with:
