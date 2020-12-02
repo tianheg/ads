@@ -1,3 +1,14 @@
 # ads
 
 Algorithm and data structure
+
+## Dependencies
+
+- [CMake](https://cmake.org/download/)
+- [Doxygen](http://www.doxygen.nl/download.html)
+
+## References
+
+- [cpp-documentation-example](https://github.com/TartanLlama/cpp-documentation-example)
+- [Clear, Functional C++ Documentation with Sphinx + Breathe + Doxygen + CMake](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
+- [DoxygenCmake](https://github.com/yoyomatsu/DoxygenCmake)

@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.8)
 project(Algorithm_and_Data_Structure
     LANGUAGES C
     VERSION 1.0.0
     DESCRIPTION "Learn Algorithm and data structure"
 )
 
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 # Set compilation standards
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED YES)
@@ -33,6 +34,10 @@ endif()
 if (NOT HAS_INTTYPES_H)
     message(FATAL_ERROR "Missing required header: 'inttypes.h'")
 endif()
+
+## Add subdirectories containing CMakeLists.txt 
+# to configure and compile files in the respective folders
+add_subdirectory(leetcode)
 
 ## Configure Doxygen documentation system
 cmake_policy(SET CMP0054 NEW)

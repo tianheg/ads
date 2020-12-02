@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_10',['main',['../ads_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ads.c'],['../hello-world_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;hello-world.c']]]
+  ['cmake_5fminimum_5frequired_11',['cmake_minimum_required',['../CMakeLists_8txt.html#ac8aef0786250068e3e64916a09b37be3',1,'CMakeLists.txt']]]
 ];
