@@ -20,6 +20,21 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 @licend  The above is the entire license notice
 for the JavaScript code in this file
 */
-var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"}]}
+var NAVTREE =
+[
+  [ "Algorithm_and_Data_Structure", "index.html", [
+    [ "LeetCode", "d8/da2/md__mnt_e_github_tianheg_ads_leetcode_README.html", null ],
+    [ "ads", "d6/d31/md__mnt_e_github_tianheg_ads_README.html", [
+      [ "Dependencies", "d6/d31/md__mnt_e_github_tianheg_ads_README.html#autotoc_md3", null ],
+      [ "References", "d6/d31/md__mnt_e_github_tianheg_ads_README.html#autotoc_md4", null ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"d6/d31/md__mnt_e_github_tianheg_ads_README.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

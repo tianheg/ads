@@ -12,3 +12,4 @@ Algorithm and data structure
 - [cpp-documentation-example](https://github.com/TartanLlama/cpp-documentation-example)
 - [Clear, Functional C++ Documentation with Sphinx + Breathe + Doxygen + CMake](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
 - [DoxygenCmake](https://github.com/yoyomatsu/DoxygenCmake)
+- [EmptyDoxygenCMake](https://github.com/kracejic/EmptyDoxygenCMake)

@@ -1,9 +1,0 @@
-/mnt/e/github/tianheg/ads/CMakeFiles/edit_cache.dir
-/mnt/e/github/tianheg/ads/CMakeFiles/package_source.dir
-/mnt/e/github/tianheg/ads/CMakeFiles/rebuild_cache.dir
-/mnt/e/github/tianheg/ads/CMakeFiles/package.dir
-/mnt/e/github/tianheg/ads/CMakeFiles/doc.dir
-/mnt/e/github/tianheg/ads/leetcode/CMakeFiles/edit_cache.dir
-/mnt/e/github/tianheg/ads/leetcode/CMakeFiles/package_source.dir
-/mnt/e/github/tianheg/ads/leetcode/CMakeFiles/rebuild_cache.dir
-/mnt/e/github/tianheg/ads/leetcode/CMakeFiles/package.dir
