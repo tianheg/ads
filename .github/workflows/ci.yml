@@ -20,12 +20,9 @@ jobs:
       - name: Doxygen
         run: |
           doxygen ./Doxyfile
-      # - name: gh-pages
-      #   uses: actions/checkout@v2
-      #   with:
-      #     ref: "gh-pages"
-      #     clean: false
-      #     token: ${{ github.token }}
+      - name: gh-pages
+        run: |
+          git checkout -b gh-pages
       - name: Move & Commit files
         run: |
           git config --global user.name github-actions
