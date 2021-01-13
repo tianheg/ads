@@ -1,6 +1,4 @@
-# ads
-
-Algorithm and data structure
+# Algorithm and data structure
 
 ## References
 

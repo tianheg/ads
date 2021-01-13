@@ -1,5 +1,5 @@
 module.exports = (ctx) => ({
-  title: "Ads",
+  title: "ADS",
   description: "解决问题",
   head: [
     [
@@ -33,7 +33,7 @@ module.exports = (ctx) => ({
   theme: "book",
   themeConfig: {
     logo: "/logo.png",
-    repo: "tianheg/ads",
+    repo: "tianheg/algorithm",
     editLinks: true,
     editLinkText: "Edit this page on GitHub",
     docsDir: "docs",
