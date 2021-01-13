@@ -41,7 +41,7 @@ module.exports = (ctx) => ({
     nav: require("./nav/nav"),
     searchPlaceholder: "搜索……",
     sidebarDepth: 2,
-    sidebar: {},
+    sidebar: { "/basis/": getBasisSidebar() },
     lastUpdated: "上次更新",
     smoothScroll: true,
   },
@@ -75,16 +75,26 @@ module.exports = (ctx) => ({
         after: `</code></pre>`,
       },
     ],
-    ['@vuepress/back-to-top'],
-    ['fulltext-search'],
-    ['vuepress-plugin-mathjax'],
+    ["@vuepress/back-to-top"],
+    ["fulltext-search"],
+    ["vuepress-plugin-mathjax"],
   ],
-  extraWatchFiles: ['.vuepress/nav/nav.js'],
+  extraWatchFiles: [".vuepress/nav/nav.js"],
   markdown: {
-      extendMarkdown: md => {
-          md.use(require('markdown-it-footnote')),
-          md.use(require('markdown-it-task-lists'))
-      },
-      lineNumbers: true,
+    extendMarkdown: (md) => {
+      md.use(require("markdown-it-footnote")),
+        md.use(require("markdown-it-task-lists"));
+    },
+    lineNumbers: true,
   },
 });
+
+function getBasisSidebar() {
+  return [
+    '',
+    'getting-started',
+    'basis',
+    'advanced',
+    'actual-combat'
+  ]
+}
