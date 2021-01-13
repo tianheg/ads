@@ -40,8 +40,8 @@ module.exports = (ctx) => ({
     docsBranch: "main",
     nav: require("./nav/nav"),
     searchPlaceholder: "搜索……",
-    sidebarDepth: 2,
-    sidebar: { "/basis/": getBasisSidebar() },
+    // sidebarDepth: 2,
+    // sidebar: { "/basis/": getBasisSidebar() },
     lastUpdated: "上次更新",
     smoothScroll: true,
   },
@@ -89,12 +89,8 @@ module.exports = (ctx) => ({
   },
 });
 
-function getBasisSidebar() {
-  return [
-    '',
-    'getting-started',
-    'basis',
-    'advanced',
-    'actual-combat'
-  ]
-}
+// function getBasisSidebar() {
+//   return [
+//     '',
+//   ]
+// }
